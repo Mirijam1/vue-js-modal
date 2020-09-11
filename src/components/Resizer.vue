@@ -112,10 +112,6 @@ export default {
       var styleWidth = parseInt(el.style.width.replace('px', ''))
       var styleHeight = parseInt(el.style.height.replace('px', ''))
 
-      //Block Resize if mouse outside visable space.
-      if (event.clientX > this.viewportWidth || event.clientX < 0) return
-      if (event.clientY > this.viewportHeight || event.clientY < 0) return
-
       //Calcualte new  Widht/Height based on direction
       if (el) {
         switch (this.targetClass) {
